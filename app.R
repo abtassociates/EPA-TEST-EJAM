@@ -7,7 +7,7 @@ ui <- fluidPage(
   h3('Test header pt. 2'),
   h5('test subheader'),
   
-  selectInput('test-sel', label = 'Choose an option', choices = c('A','B','C'))
+  selectInput('test_sel', label = 'Choose an option', choices = c('A','B','C'))
 )
 
 server <- function(input, output, session) {
