@@ -7,6 +7,8 @@ ui <- fluidPage(
   h3('Test header pt. 2'),
   h5('test subheader'),
   
+  h5('New code showing up!'),
+  
   selectInput('test_sel', label = 'Choose an option', choices = c('A','B','C'))
 )
 
