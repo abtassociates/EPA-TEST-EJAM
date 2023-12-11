@@ -848,26 +848,26 @@
         "Package": "curl",
         "Type": "Package",
         "Title": "A Modern and Flexible Web Client for R",
-        "Version": "5.0.0",
+        "Version": "5.2.0",
         "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroen@berkeley.edu\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = \"ctb\"),\n    person(\"RStudio\", role = \"cph\")\n    )",
         "Description": "The curl() and curl_download() functions provide highly\n    configurable drop-in replacements for base url() and download.file() with\n    better performance, support for encryption (https, ftps), gzip compression,\n    authentication, and other 'libcurl' goodies. The core of the package implements a\n    framework for performing fully customized requests where data can be processed\n    either in memory, on disk, or streaming via the callback or connection\n    interfaces. Some knowledge of 'libcurl' is recommended; for a more-user-friendly\n    web client see the 'httr' package which builds on this package with http\n    specific tools and logic.",
         "License": "MIT + file LICENSE",
         "SystemRequirements": "libcurl: libcurl-devel (rpm) or\nlibcurl4-openssl-dev (deb).",
-        "URL": "https://github.com/jeroen/curl (devel) https://curl.se/libcurl/\n(upstream)",
+        "URL": "https://jeroen.r-universe.dev/curl https://curl.se/libcurl/",
         "BugReports": "https://github.com/jeroen/curl/issues",
-        "Suggests": "spelling, testthat (>= 1.0.0), knitr, jsonlite, rmarkdown,\nmagrittr, httpuv (>= 1.4.4), webutils",
+        "Suggests": "spelling, testthat (>= 1.0.0), knitr, jsonlite, later,\nrmarkdown, magrittr, httpuv (>= 1.4.4), webutils",
         "VignetteBuilder": "knitr",
         "Depends": "R (>= 3.0.0)",
-        "RoxygenNote": "7.2.1",
+        "RoxygenNote": "7.2.3",
         "Encoding": "UTF-8",
         "Language": "en-US",
         "NeedsCompilation": "yes",
-        "Packaged": "2023-01-12 13:33:22 UTC; jeroen",
+        "Packaged": "2023-12-07 23:07:08 UTC; jeroen",
         "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Hadley Wickham [ctb],\n  RStudio [cph]",
         "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
-        "Date/Publication": "2023-01-12 18:10:01 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-01-31 16:30:03 UTC; unix"
+        "Repository": "RSPM",
+        "Date/Publication": "2023-12-08 07:30:02 UTC",
+        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-12-11 21:51:01 UTC; unix"
       }
     },
     "data.table": {
@@ -1553,26 +1553,26 @@
       "description": {
         "Package": "httr",
         "Title": "Tools for Working with URLs and HTTP",
-        "Version": "1.4.4",
-        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = c(\"aut\", \"cre\")),\n    person(\"RStudio\", role = c(\"cph\", \"fnd\"))\n  )",
+        "Version": "1.4.7",
+        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Posit, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
         "Description": "Useful tools for working with HTTP organised by HTTP verbs\n    (GET(), POST(), etc). Configuration functions make it easy to control\n    additional request components (authenticate(), add_headers() and so\n    on).",
         "License": "MIT + file LICENSE",
         "URL": "https://httr.r-lib.org/, https://github.com/r-lib/httr",
         "BugReports": "https://github.com/r-lib/httr/issues",
-        "Depends": "R (>= 3.2)",
-        "Imports": "curl (>= 3.0.0), jsonlite, mime, openssl (>= 0.8), R6",
+        "Depends": "R (>= 3.5)",
+        "Imports": "curl (>= 5.0.2), jsonlite, mime, openssl (>= 0.8), R6",
         "Suggests": "covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat\n(>= 0.8.0), xml2",
         "VignetteBuilder": "knitr",
         "Config/Needs/website": "tidyverse/tidytemplate",
         "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.1",
+        "RoxygenNote": "7.2.3",
         "NeedsCompilation": "no",
-        "Packaged": "2022-08-16 11:25:45 UTC; hadleywickham",
-        "Author": "Hadley Wickham [aut, cre],\n  RStudio [cph, fnd]",
-        "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2022-08-17 13:00:04 UTC",
-        "Built": "R 4.2.0; ; 2023-01-31 16:42:45 UTC; unix"
+        "Packaged": "2023-08-15 02:56:56 UTC; hadleywickham",
+        "Author": "Hadley Wickham [aut, cre],\n  Posit, PBC [cph, fnd]",
+        "Maintainer": "Hadley Wickham <hadley@posit.co>",
+        "Repository": "RSPM",
+        "Date/Publication": "2023-08-15 09:00:02 UTC",
+        "Built": "R 4.2.0; ; 2023-12-11 21:51:11 UTC; unix"
       }
     },
     "isoband": {
@@ -3686,7 +3686,7 @@
   },
   "files": {
     ".Rprofile": {
-      "checksum": "d5628c0b353dff2743f9e0d0d89c04f7"
+      "checksum": "2a286971eea5658930fd6e99b1bf38ec"
     },
     "app.R": {
       "checksum": "8a94450904b1da2b577cb147e77dd485"
@@ -3701,7 +3701,7 @@
       "checksum": "b7eb1e70cfedcbacfda92a8e67b7a29f"
     },
     "renv.lock": {
-      "checksum": "d171dc29efc614c73ef469a5bcfe5df4"
+      "checksum": "db01a2299f30dc66d9cff0ba58ecbb90"
     }
   },
   "users": null
