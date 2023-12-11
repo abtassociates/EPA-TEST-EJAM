@@ -1674,20 +1674,6 @@
       ],
       "Hash": "62b65c52671e6665f803ff02954446e9"
     },
-    "vctrs": {
-      "Package": "vctrs",
-      "Version": "0.5.2",
-      "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R",
-        "cli",
-        "glue",
-        "lifecycle",
-        "rlang"
-      ],
-      "Hash": "e4ffa94ceed5f124d429a5a5f0f5b378"
-    },
     "viridis": {
       "Package": "viridis",
       "Version": "0.6.4",
