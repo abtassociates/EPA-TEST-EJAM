@@ -25,7 +25,7 @@ server <- function(input, output, session) {
   })
   
   output$pins_table <- renderTable({
-    dataload_from_pins(varnames = 'bgpts')
+    dataload_from_pins(varnames = 'frs_by_naics')
     head(bgpts)
   })
 }
