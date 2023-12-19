@@ -60,90 +60,6 @@
         "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-10-23 15:17:43 UTC; unix"
       }
     },
-    "arrow": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "arrow",
-        "Title": "Integration to 'Apache' 'Arrow'",
-        "Version": "14.0.0.2",
-        "Authors@R": "c(\n    person(\"Neal\", \"Richardson\", email = \"neal.p.richardson@gmail.com\", role = c(\"aut\")),\n    person(\"Ian\", \"Cook\", email = \"ianmcook@gmail.com\", role = c(\"aut\")),\n    person(\"Nic\", \"Crane\", email = \"thisisnic@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(\"Dewey\", \"Dunnington\", role = c(\"aut\"), email = \"dewey@fishandwhistle.net\", comment = c(ORCID = \"0000-0002-9415-4582\")),\n    person(\"Romain\", \"Fran\\u00e7ois\", role = c(\"aut\"), comment = c(ORCID = \"0000-0002-2444-4226\")),\n    person(\"Jonathan\", \"Keane\", email = \"jkeane@gmail.com\", role = c(\"aut\")),\n    person(\"Drago\\u0219\", \"Moldovan-Gr\\u00fcnfeld\", email = \"dragos.mold@gmail.com\", role = c(\"aut\")),\n    person(\"Jeroen\", \"Ooms\", email = \"jeroen@berkeley.edu\", role = c(\"aut\")),\n    person(\"Jacob\", \"Wujciak-Jens\", email = \"jacob@wujciak.de\", role = c(\"aut\")),\n    person(\"Javier\", \"Luraschi\", email = \"javier@rstudio.com\", role = c(\"ctb\")),\n    person(\"Karl\", \"Dunkle Werner\", email = \"karldw@users.noreply.github.com\", role = c(\"ctb\"), comment = c(ORCID = \"0000-0003-0523-7309\")),\n    person(\"Jeffrey\", \"Wong\", email = \"jeffreyw@netflix.com\", role = c(\"ctb\")),\n    person(\"Apache Arrow\", email = \"dev@arrow.apache.org\", role = c(\"aut\", \"cph\"))\n  )",
-        "Description": "'Apache' 'Arrow' <https://arrow.apache.org/> is a cross-language\n    development platform for in-memory data. It specifies a standardized\n    language-independent columnar memory format for flat and hierarchical data,\n    organized for efficient analytic operations on modern hardware. This\n    package provides an interface to the 'Arrow C++' library.",
-        "Depends": "R (>= 3.4)",
-        "License": "Apache License (>= 2.0)",
-        "URL": "https://github.com/apache/arrow/, https://arrow.apache.org/docs/r/",
-        "BugReports": "https://github.com/apache/arrow/issues",
-        "Encoding": "UTF-8",
-        "Language": "en-US",
-        "SystemRequirements": "C++17; for AWS S3 support on Linux, libcurl and\nopenssl (optional)",
-        "Biarch": "true",
-        "Imports": "assertthat, bit64 (>= 0.9-7), glue, methods, purrr, R6, rlang\n(>= 1.0.0), stats, tidyselect (>= 1.0.0), utils, vctrs",
-        "RoxygenNote": "7.2.3",
-        "Config/testthat/edition": "3",
-        "Suggests": "blob, curl, cli, DBI, dbplyr, decor, distro, dplyr, duckdb\n(>= 0.2.8), hms, jsonlite, knitr, lubridate, pillar, pkgload,\nreticulate, rmarkdown, stringi, stringr, sys, testthat (>=\n3.1.0), tibble, tzdb, withr",
-        "LinkingTo": "cpp11 (>= 0.4.2)",
-        "Collate": "'arrowExports.R' 'enums.R' 'arrow-object.R' 'type.R'\n'array-data.R' 'arrow-datum.R' 'array.R' 'arrow-info.R'\n'arrow-package.R' 'arrow-tabular.R' 'buffer.R'\n'chunked-array.R' 'io.R' 'compression.R' 'scalar.R' 'compute.R'\n'config.R' 'csv.R' 'dataset.R' 'dataset-factory.R'\n'dataset-format.R' 'dataset-partition.R' 'dataset-scan.R'\n'dataset-write.R' 'dictionary.R' 'dplyr-across.R'\n'dplyr-arrange.R' 'dplyr-by.R' 'dplyr-collect.R'\n'dplyr-count.R' 'dplyr-datetime-helpers.R' 'dplyr-distinct.R'\n'dplyr-eval.R' 'dplyr-filter.R' 'dplyr-funcs-augmented.R'\n'dplyr-funcs-conditional.R' 'dplyr-funcs-datetime.R'\n'dplyr-funcs-doc.R' 'dplyr-funcs-math.R' 'dplyr-funcs-simple.R'\n'dplyr-funcs-string.R' 'dplyr-funcs-type.R' 'expression.R'\n'dplyr-funcs.R' 'dplyr-glimpse.R' 'dplyr-group-by.R'\n'dplyr-join.R' 'dplyr-mutate.R' 'dplyr-select.R'\n'dplyr-slice.R' 'dplyr-summarize.R' 'dplyr-union.R'\n'record-batch.R' 'table.R' 'dplyr.R' 'duckdb.R' 'extension.R'\n'feather.R' 'field.R' 'filesystem.R' 'flight.R'\n'install-arrow.R' 'ipc-stream.R' 'json.R' 'memory-pool.R'\n'message.R' 'metadata.R' 'parquet.R' 'python.R'\n'query-engine.R' 'record-batch-reader.R'\n'record-batch-writer.R' 'reexports-bit64.R'\n'reexports-tidyselect.R' 'schema.R' 'udf.R' 'util.R'",
-        "NeedsCompilation": "yes",
-        "Packaged": "2023-12-01 18:37:34 UTC; jwj",
-        "Author": "Neal Richardson [aut],\n  Ian Cook [aut],\n  Nic Crane [aut, cre],\n  Dewey Dunnington [aut] (<https://orcid.org/0000-0002-9415-4582>),\n  Romain François [aut] (<https://orcid.org/0000-0002-2444-4226>),\n  Jonathan Keane [aut],\n  Dragoș Moldovan-Grünfeld [aut],\n  Jeroen Ooms [aut],\n  Jacob Wujciak-Jens [aut],\n  Javier Luraschi [ctb],\n  Karl Dunkle Werner [ctb] (<https://orcid.org/0000-0003-0523-7309>),\n  Jeffrey Wong [ctb],\n  Apache Arrow [aut, cph]",
-        "Maintainer": "Nic Crane <thisisnic@gmail.com>",
-        "Repository": "RSPM",
-        "Date/Publication": "2023-12-02 01:30:03 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-12-14 19:20:49 UTC; unix"
-      }
-    },
-    "askpass": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "askpass",
-        "Type": "Package",
-        "Title": "Safe Password Entry for R, Git, and SSH",
-        "Version": "1.1",
-        "Authors@R": "person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), \n    email = \"jeroen@berkeley.edu\", comment = c(ORCID = \"0000-0002-4035-0289\"))",
-        "Description": "Cross-platform utilities for prompting the user for credentials or a \n    passphrase, for example to authenticate with a server or read a protected key.\n    Includes native programs for MacOS and Windows, hence no 'tcltk' is required. \n    Password entry can be invoked in two different ways: directly from R via the \n    askpass() function, or indirectly as password-entry back-end for 'ssh-agent' \n    or 'git-credential' via the SSH_ASKPASS and GIT_ASKPASS environment variables.\n    Thereby the user can be prompted for credentials or a passphrase if needed \n    when R calls out to git or ssh.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://github.com/jeroen/askpass#readme",
-        "BugReports": "https://github.com/jeroen/askpass/issues",
-        "Encoding": "UTF-8",
-        "LazyData": "true",
-        "Imports": "sys (>= 2.1)",
-        "RoxygenNote": "6.1.1",
-        "Suggests": "testthat",
-        "Language": "en-US",
-        "NeedsCompilation": "yes",
-        "Packaged": "2019-01-13 12:08:17 UTC; jeroen",
-        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>)",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
-        "Date/Publication": "2019-01-13 12:50:03 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-05-25 23:08:31 UTC; unix"
-      }
-    },
-    "assertthat": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "assertthat",
-        "Title": "Easy Pre and Post Assertions",
-        "Version": "0.2.1",
-        "Authors@R": "\n  person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", c(\"aut\", \"cre\"))",
-        "Description": "An extension to stopifnot() that makes it easy to declare \n    the pre and post conditions that you code should satisfy, while also \n    producing friendly error messages so that your users know what's gone\n    wrong.",
-        "License": "GPL-3",
-        "Imports": "tools",
-        "Suggests": "testthat, covr",
-        "RoxygenNote": "6.0.1",
-        "Collate": "'assert-that.r' 'on-failure.r' 'assertions-file.r'\n'assertions-scalar.R' 'assertions.r' 'base.r'\n'base-comparison.r' 'base-is.r' 'base-logical.r' 'base-misc.r'\n'utils.r' 'validate-that.R'",
-        "NeedsCompilation": "no",
-        "Packaged": "2019-03-21 13:11:01 UTC; hadley",
-        "Author": "Hadley Wickham [aut, cre]",
-        "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "RSPM",
-        "Date/Publication": "2019-03-21 14:53:46 UTC",
-        "Encoding": "UTF-8",
-        "Built": "R 4.2.0; ; 2023-12-14 19:09:07 UTC; unix"
-      }
-    },
     "base64enc": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -163,62 +79,6 @@
         "Repository": "CRAN",
         "Date/Publication": "2015-07-28 08:03:37",
         "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-05-25 22:06:55 UTC; unix"
-      }
-    },
-    "bit": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "bit",
-        "Type": "Package",
-        "Title": "Classes and Methods for Fast Memory-Efficient Boolean Selections",
-        "Version": "4.0.5",
-        "Date": "2022-11-13",
-        "Author": "Jens Oehlschlägel [aut, cre], Brian Ripley [ctb]",
-        "Maintainer": "Jens Oehlschlägel <Jens.Oehlschlaegel@truecluster.com>",
-        "Depends": "R (>= 2.9.2)",
-        "Suggests": "testthat (>= 0.11.0), roxygen2, knitr, rmarkdown,\nmicrobenchmark, bit64 (>= 4.0.0), ff (>= 4.0.0)",
-        "Description": "Provided are classes for boolean and skewed boolean vectors,\n    fast boolean methods, fast unique and non-unique integer sorting,\n    fast set operations on sorted and unsorted sets of integers, and\n    foundations for ff (range index, compression, chunked processing).",
-        "License": "GPL-2 | GPL-3",
-        "LazyLoad": "yes",
-        "ByteCompile": "yes",
-        "Encoding": "UTF-8",
-        "URL": "https://github.com/truecluster/bit",
-        "VignetteBuilder": "knitr, rmarkdown",
-        "RoxygenNote": "7.2.0",
-        "NeedsCompilation": "yes",
-        "Packaged": "2022-11-13 21:22:09 UTC; jo",
-        "Repository": "CRAN",
-        "Date/Publication": "2022-11-15 21:20:16 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-01-31 16:28:37 UTC; unix"
-      }
-    },
-    "bit64": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "bit64",
-        "Type": "Package",
-        "Title": "A S3 Class for Vectors of 64bit Integers",
-        "Version": "4.0.5",
-        "Date": "2020-08-29",
-        "Author": "Jens Oehlschlägel [aut, cre], Leonardo Silvestri [ctb]",
-        "Maintainer": "Jens Oehlschlägel <Jens.Oehlschlaegel@truecluster.com>",
-        "Depends": "R (>= 3.0.1), bit (>= 4.0.0), utils, methods, stats",
-        "Description": "\n Package 'bit64' provides serializable S3 atomic 64bit (signed) integers. \n These are useful for handling database keys and exact counting in +-2^63.\n WARNING: do not use them as replacement for 32bit integers, integer64 are not\n supported for subscripting by R-core and they have different semantics when \n combined with double, e.g. integer64 + double => integer64. \n Class integer64 can be used in vectors, matrices, arrays and data.frames. \n Methods are available for coercion from and to logicals, integers, doubles, \n characters and factors as well as many elementwise and summary functions. \n Many fast algorithmic operations such as 'match' and 'order' support inter-\n active data exploration and manipulation and optionally leverage caching.",
-        "License": "GPL-2 | GPL-3",
-        "LazyLoad": "yes",
-        "ByteCompile": "yes",
-        "URL": "https://github.com/truecluster/bit64",
-        "Encoding": "UTF-8",
-        "Repository": "CRAN",
-        "Repository/R-Forge/Project": "ff",
-        "Repository/R-Forge/Revision": "177",
-        "Repository/R-Forge/DateTimeStamp": "2018-08-17 17:45:18",
-        "Date/Publication": "2020-08-30 07:20:02 UTC",
-        "NeedsCompilation": "yes",
-        "Packaged": "2020-08-29 10:56:45 UTC; jo",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-05-25 23:11:10 UTC; unix"
       }
     },
     "bslib": {
@@ -333,35 +193,6 @@
         "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-10-23 15:21:30 UTC; unix"
       }
     },
-    "cpp11": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "cpp11",
-        "Title": "A C++11 Interface for R's C Interface",
-        "Version": "0.4.3",
-        "Authors@R": "\n    c(person(given = \"Jim\",\n             family = \"Hester\",\n             role = \"aut\",\n             comment = c(ORCID = \"0000-0002-2739-7082\")),\n      person(given = \"Romain\",\n             family = \"François\",\n             role = c(\"aut\", \"cre\"),\n             email = \"romain@rstudio.com\"),\n      person(given = \"Benjamin\",\n             family = \"Kietzman\",\n             role = \"ctb\"),\n      person(given = \"RStudio\",\n             role = c(\"cph\", \"fnd\")))",
-        "Description": "Provides a header only, C++11 interface to R's C\n    interface.  Compared to other approaches 'cpp11' strives to be safe\n    against long jumps from the C API as well as C++ exceptions, conform\n    to normal R function semantics and supports interaction with 'ALTREP'\n    vectors.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://cpp11.r-lib.org, https://github.com/r-lib/cpp11",
-        "BugReports": "https://github.com/r-lib/cpp11/issues",
-        "Suggests": "bench, brio, callr, cli, covr, decor, desc, ggplot2, glue,\nknitr, lobstr, mockery, progress, rmarkdown, scales, Rcpp,\ntestthat, tibble, utils, vctrs, withr",
-        "VignetteBuilder": "knitr",
-        "Config/Needs/website": "tidyverse/tidytemplate",
-        "Config/testthat/edition": "3",
-        "Config/Needs/cpp11/cpp_register": "brio, cli, decor, desc, glue, tibble,\nvctrs",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.1",
-        "SystemRequirements": "C++11",
-        "NeedsCompilation": "no",
-        "Packaged": "2022-10-12 08:07:26 UTC; romainfrancois",
-        "Author": "Jim Hester [aut] (<https://orcid.org/0000-0002-2739-7082>),\n  Romain François [aut, cre],\n  Benjamin Kietzman [ctb],\n  RStudio [cph, fnd]",
-        "Maintainer": "Romain François <romain@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2022-10-12 08:43:54 UTC",
-        "Built": "R 4.2.0; ; 2023-01-31 16:29:03 UTC; unix"
-      }
-    },
     "crayon": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -386,35 +217,6 @@
         "Repository": "CRAN",
         "Date/Publication": "2022-09-29 16:20:24 UTC",
         "Built": "R 4.2.0; ; 2023-01-31 16:29:10 UTC; unix"
-      }
-    },
-    "curl": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "curl",
-        "Type": "Package",
-        "Title": "A Modern and Flexible Web Client for R",
-        "Version": "5.2.0",
-        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroen@berkeley.edu\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = \"ctb\"),\n    person(\"RStudio\", role = \"cph\")\n    )",
-        "Description": "The curl() and curl_download() functions provide highly\n    configurable drop-in replacements for base url() and download.file() with\n    better performance, support for encryption (https, ftps), gzip compression,\n    authentication, and other 'libcurl' goodies. The core of the package implements a\n    framework for performing fully customized requests where data can be processed\n    either in memory, on disk, or streaming via the callback or connection\n    interfaces. Some knowledge of 'libcurl' is recommended; for a more-user-friendly\n    web client see the 'httr' package which builds on this package with http\n    specific tools and logic.",
-        "License": "MIT + file LICENSE",
-        "SystemRequirements": "libcurl: libcurl-devel (rpm) or\nlibcurl4-openssl-dev (deb).",
-        "URL": "https://jeroen.r-universe.dev/curl https://curl.se/libcurl/",
-        "BugReports": "https://github.com/jeroen/curl/issues",
-        "Suggests": "spelling, testthat (>= 1.0.0), knitr, jsonlite, later,\nrmarkdown, magrittr, httpuv (>= 1.4.4), webutils",
-        "VignetteBuilder": "knitr",
-        "Depends": "R (>= 3.0.0)",
-        "RoxygenNote": "7.2.3",
-        "Encoding": "UTF-8",
-        "Language": "en-US",
-        "NeedsCompilation": "yes",
-        "Packaged": "2023-12-07 23:07:08 UTC; jeroen",
-        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Hadley Wickham [ctb],\n  RStudio [cph]",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "RSPM",
-        "Date/Publication": "2023-12-08 07:30:02 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-12-11 21:51:01 UTC; unix"
       }
     },
     "digest": {
@@ -466,34 +268,6 @@
         "Repository": "CRAN",
         "Date/Publication": "2021-04-29 12:40:02 UTC",
         "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-05-25 23:27:11 UTC; unix"
-      }
-    },
-    "fansi": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "fansi",
-        "Title": "ANSI Control Sequence Aware String Functions",
-        "Description": "Counterparts to R string manipulation functions that account for\n   the effects of ANSI text formatting control sequences.",
-        "Version": "1.0.5",
-        "Authors@R": "c(\n    person(\"Brodie\", \"Gaslam\", email=\"brodie.gaslam@yahoo.com\",\n    role=c(\"aut\", \"cre\")),\n    person(\"Elliott\", \"Sales De Andrade\", role=\"ctb\"),\n    person(family=\"R Core Team\",\n    email=\"R-core@r-project.org\", role=\"cph\",\n    comment=\"UTF8 byte length calcs from src/util.c\"\n    ))",
-        "Depends": "R (>= 3.1.0)",
-        "License": "GPL-2 | GPL-3",
-        "URL": "https://github.com/brodieG/fansi",
-        "BugReports": "https://github.com/brodieG/fansi/issues",
-        "VignetteBuilder": "knitr",
-        "Suggests": "unitizer, knitr, rmarkdown",
-        "Imports": "grDevices, utils",
-        "RoxygenNote": "7.2.3",
-        "Encoding": "UTF-8",
-        "Collate": "'constants.R' 'fansi-package.R' 'internal.R' 'load.R' 'misc.R'\n'nchar.R' 'strwrap.R' 'strtrim.R' 'strsplit.R' 'substr2.R'\n'trimws.R' 'tohtml.R' 'unhandled.R' 'normalize.R' 'sgr.R'",
-        "NeedsCompilation": "yes",
-        "Packaged": "2023-10-07 16:15:12 UTC; bg",
-        "Author": "Brodie Gaslam [aut, cre],\n  Elliott Sales De Andrade [ctb],\n  R Core Team [cph] (UTF8 byte length calcs from src/util.c)",
-        "Maintainer": "Brodie Gaslam <brodie.gaslam@yahoo.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2023-10-08 19:30:05 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-10-23 15:20:49 UTC; unix"
       }
     },
     "fastmap": {
@@ -580,34 +354,6 @@
         "Repository": "CRAN",
         "Date/Publication": "2023-07-20 10:30:02 UTC",
         "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-10-23 15:19:54 UTC; unix"
-      }
-    },
-    "generics": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "generics",
-        "Title": "Common S3 Generics not Provided by Base R Methods Related to\nModel Fitting",
-        "Version": "0.1.3",
-        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = c(\"aut\", \"cre\")),\n    person(\"Max\", \"Kuhn\", , \"max@rstudio.com\", role = \"aut\"),\n    person(\"Davis\", \"Vaughan\", , \"davis@rstudio.com\", role = \"aut\"),\n    person(\"RStudio\", role = \"cph\")\n  )",
-        "Description": "In order to reduce potential package dependencies and\n    conflicts, generics provides a number of commonly used S3 generics.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://generics.r-lib.org, https://github.com/r-lib/generics",
-        "BugReports": "https://github.com/r-lib/generics/issues",
-        "Depends": "R (>= 3.2)",
-        "Imports": "methods",
-        "Suggests": "covr, pkgload, testthat (>= 3.0.0), tibble, withr",
-        "Config/Needs/website": "tidyverse/tidytemplate",
-        "Config/testthat/edition": "3",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.0",
-        "NeedsCompilation": "no",
-        "Packaged": "2022-07-05 14:52:13 UTC; davis",
-        "Author": "Hadley Wickham [aut, cre],\n  Max Kuhn [aut],\n  Davis Vaughan [aut],\n  RStudio [cph]",
-        "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2022-07-05 19:40:02 UTC",
-        "Built": "R 4.2.0; ; 2023-01-31 16:29:38 UTC; unix"
       }
     },
     "glue": {
@@ -698,34 +444,6 @@
         "Repository": "CRAN",
         "Date/Publication": "2023-05-11 08:00:05 UTC",
         "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-10-23 15:41:14 UTC; unix"
-      }
-    },
-    "httr": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "httr",
-        "Title": "Tools for Working with URLs and HTTP",
-        "Version": "1.4.7",
-        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"Posit, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
-        "Description": "Useful tools for working with HTTP organised by HTTP verbs\n    (GET(), POST(), etc). Configuration functions make it easy to control\n    additional request components (authenticate(), add_headers() and so\n    on).",
-        "License": "MIT + file LICENSE",
-        "URL": "https://httr.r-lib.org/, https://github.com/r-lib/httr",
-        "BugReports": "https://github.com/r-lib/httr/issues",
-        "Depends": "R (>= 3.5)",
-        "Imports": "curl (>= 5.0.2), jsonlite, mime, openssl (>= 0.8), R6",
-        "Suggests": "covr, httpuv, jpeg, knitr, png, readr, rmarkdown, testthat\n(>= 0.8.0), xml2",
-        "VignetteBuilder": "knitr",
-        "Config/Needs/website": "tidyverse/tidytemplate",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.3",
-        "NeedsCompilation": "no",
-        "Packaged": "2023-08-15 02:56:56 UTC; hadleywickham",
-        "Author": "Hadley Wickham [aut, cre],\n  Posit, PBC [cph, fnd]",
-        "Maintainer": "Hadley Wickham <hadley@posit.co>",
-        "Repository": "RSPM",
-        "Date/Publication": "2023-08-15 09:00:02 UTC",
-        "Built": "R 4.2.0; ; 2023-12-11 21:51:11 UTC; unix"
       }
     },
     "jquerylib": {
@@ -914,121 +632,6 @@
         "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2022-05-25 22:31:40 UTC; unix"
       }
     },
-    "openssl": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "openssl",
-        "Type": "Package",
-        "Title": "Toolkit for Encryption, Signatures and Certificates Based on\nOpenSSL",
-        "Version": "2.0.5",
-        "Authors@R": "c(person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroen@berkeley.edu\",\n    comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Oliver\", \"Keyes\", role = \"ctb\"))",
-        "Description": "Bindings to OpenSSL libssl and libcrypto, plus custom SSH key parsers.\n    Supports RSA, DSA and EC curves P-256, P-384, P-521, and curve25519. Cryptographic\n    signatures can either be created and verified manually or via x509 certificates. \n    AES can be used in cbc, ctr or gcm mode for symmetric encryption; RSA for asymmetric\n    (public key) encryption or EC for Diffie Hellman. High-level envelope functions \n    combine RSA and AES for encrypting arbitrary sized data. Other utilities include key\n    generators, hash functions (md5, sha1, sha256, etc), base64 encoder, a secure random\n    number generator, and 'bignum' math methods for manually performing crypto \n    calculations on large multibyte integers.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://github.com/jeroen/openssl",
-        "BugReports": "https://github.com/jeroen/openssl/issues",
-        "SystemRequirements": "OpenSSL >= 1.0.2",
-        "VignetteBuilder": "knitr",
-        "Imports": "askpass",
-        "Suggests": "curl, testthat (>= 2.1.0), digest, knitr, rmarkdown,\njsonlite, jose, sodium",
-        "RoxygenNote": "7.2.1",
-        "Encoding": "UTF-8",
-        "NeedsCompilation": "yes",
-        "Packaged": "2022-12-05 23:28:02 UTC; jeroen",
-        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Oliver Keyes [ctb]",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
-        "Date/Publication": "2022-12-06 01:10:02 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-01-31 16:29:43 UTC; unix"
-      }
-    },
-    "pillar": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "pillar",
-        "Title": "Coloured Formatting for Columns",
-        "Version": "1.9.0",
-        "Authors@R": "\n    c(person(given = \"Kirill\",\n             family = \"M\\u00fcller\",\n             role = c(\"aut\", \"cre\"),\n             email = \"kirill@cynkra.com\",\n             comment = c(ORCID = \"0000-0002-1416-3412\")),\n      person(given = \"Hadley\",\n             family = \"Wickham\",\n             role = \"aut\"),\n      person(given = \"RStudio\",\n             role = \"cph\"))",
-        "Description": "Provides 'pillar' and 'colonnade' generics designed\n    for formatting columns of data using the full range of colours\n    provided by modern terminals.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://pillar.r-lib.org/, https://github.com/r-lib/pillar",
-        "BugReports": "https://github.com/r-lib/pillar/issues",
-        "Imports": "cli (>= 2.3.0), fansi, glue, lifecycle, rlang (>= 1.0.2), utf8\n(>= 1.1.0), utils, vctrs (>= 0.5.0)",
-        "Suggests": "bit64, DBI, debugme, DiagrammeR, dplyr, formattable, ggplot2,\nknitr, lubridate, nanotime, nycflights13, palmerpenguins,\nrmarkdown, scales, stringi, survival, testthat (>= 3.1.1),\ntibble, units (>= 0.7.2), vdiffr, withr",
-        "VignetteBuilder": "knitr",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.3",
-        "Config/testthat/edition": "3",
-        "Config/testthat/parallel": "true",
-        "Config/testthat/start-first": "format_multi_fuzz, format_multi_fuzz_2,\nformat_multi, ctl_colonnade, ctl_colonnade_1, ctl_colonnade_2",
-        "Config/autostyle/scope": "line_breaks",
-        "Config/autostyle/strict": "true",
-        "Config/gha/extra-packages": "DiagrammeR=?ignore-before-r=3.5.0",
-        "Config/Needs/website": "tidyverse/tidytemplate",
-        "NeedsCompilation": "no",
-        "Packaged": "2023-03-21 08:42:46 UTC; kirill",
-        "Author": "Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>),\n  Hadley Wickham [aut],\n  RStudio [cph]",
-        "Maintainer": "Kirill Müller <kirill@cynkra.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2023-03-22 08:10:02 UTC",
-        "Built": "R 4.2.0; ; 2023-10-23 15:34:42 UTC; unix"
-      }
-    },
-    "pins": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Type": "Package",
-        "Package": "pins",
-        "Title": "Pin, Discover and Share Resources",
-        "Version": "1.3.0",
-        "Authors@R": "c(\n    person(\"Julia\", \"Silge\", , \"julia.silge@posit.co\", role = c(\"cre\", \"aut\"),\n           comment = c(ORCID = \"0000-0002-3671-836X\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = \"aut\",\n           comment = c(ORCID = \"0000-0003-4757-117X\")),\n    person(\"Javier\", \"Luraschi\", , \"jluraschi@gmail.com\", role = \"aut\"),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
-        "Description": "Publish data sets, models, and other R objects, making it\n    easy to share them across projects and with your colleagues. You can\n    pin objects to a variety of \"boards\", including local folders (to\n    share on a networked drive or with 'DropBox'), 'RStudio' connect,\n    Amazon S3, and more.",
-        "License": "Apache License (>= 2)",
-        "URL": "https://pins.rstudio.com/, https://github.com/rstudio/pins-r",
-        "BugReports": "https://github.com/rstudio/pins-r/issues",
-        "Depends": "R (>= 3.6)",
-        "Imports": "cli, digest, ellipsis, fs, generics, glue, httr, jsonlite,\nlifecycle, magrittr, purrr (>= 1.0.0), rappdirs, rlang (>=\n1.1.0), tibble, whisker, withr (>= 2.4.3), yaml",
-        "Suggests": "archive, arrow, AzureStor, covr, data.table, datasets,\nfilelock, gitcreds, googleCloudStorageR, googledrive, ids,\nknitr, Microsoft365R, mime, mockery, openssl, paws.storage, qs,\nR.utils, rmarkdown, rsconnect, shiny, sodium, testthat (>=\n3.1.7), webfakes (>= 1.2.0), xml2, zip",
-        "VignetteBuilder": "knitr",
-        "Config/Needs/website": "tidyverse/tidytemplate",
-        "Config/testthat/edition": "3",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.3",
-        "NeedsCompilation": "no",
-        "Packaged": "2023-11-09 15:53:55 UTC; juliasilge",
-        "Author": "Julia Silge [cre, aut] (<https://orcid.org/0000-0002-3671-836X>),\n  Hadley Wickham [aut] (<https://orcid.org/0000-0003-4757-117X>),\n  Javier Luraschi [aut],\n  Posit Software, PBC [cph, fnd]",
-        "Maintainer": "Julia Silge <julia.silge@posit.co>",
-        "Repository": "RSPM",
-        "Date/Publication": "2023-11-09 17:30:02 UTC",
-        "Built": "R 4.2.0; ; 2023-12-11 18:15:46 UTC; unix"
-      }
-    },
-    "pkgconfig": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "pkgconfig",
-        "Title": "Private Configuration for 'R' Packages",
-        "Version": "2.0.3",
-        "Author": "Gábor Csárdi",
-        "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
-        "Description": "Set configuration options on a per-package basis.\n    Options set by a given package only apply to that package,\n    other packages are unaffected.",
-        "License": "MIT + file LICENSE",
-        "LazyData": "true",
-        "Imports": "utils",
-        "Suggests": "covr, testthat, disposables (>= 1.0.3)",
-        "URL": "https://github.com/r-lib/pkgconfig#readme",
-        "BugReports": "https://github.com/r-lib/pkgconfig/issues",
-        "Encoding": "UTF-8",
-        "NeedsCompilation": "no",
-        "Packaged": "2019-09-22 08:42:40 UTC; gaborcsardi",
-        "Repository": "CRAN",
-        "Date/Publication": "2019-09-22 09:20:02 UTC",
-        "Built": "R 4.2.0; ; 2022-05-25 22:34:46 UTC; unix"
-      }
-    },
     "promises": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -1057,37 +660,6 @@
         "Repository": "CRAN",
         "Date/Publication": "2023-08-10 16:00:02 UTC",
         "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-10-23 15:35:02 UTC; unix"
-      }
-    },
-    "purrr": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "purrr",
-        "Title": "Functional Programming Tools",
-        "Version": "1.0.1",
-        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0003-4757-117X\")),\n    person(\"Lionel\", \"Henry\", , \"lionel@rstudio.com\", role = \"aut\"),\n    person(\"RStudio\", role = c(\"cph\", \"fnd\"))\n  )",
-        "Description": "A complete and consistent functional programming toolkit for\n    R.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://purrr.tidyverse.org/, https://github.com/tidyverse/purrr",
-        "BugReports": "https://github.com/tidyverse/purrr/issues",
-        "Depends": "R (>= 3.4.0)",
-        "Imports": "cli (>= 3.4.0), lifecycle (>= 1.0.3), magrittr (>= 1.5.0),\nrlang (>= 0.4.10), vctrs (>= 0.5.0)",
-        "Suggests": "covr, dplyr (>= 0.7.8), httr, knitr, lubridate, rmarkdown,\ntestthat (>= 3.0.0), tibble, tidyselect",
-        "LinkingTo": "cli",
-        "VignetteBuilder": "knitr",
-        "Biarch": "true",
-        "Config/Needs/website": "tidyverse/tidytemplate",
-        "Config/testthat/edition": "3",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.3",
-        "NeedsCompilation": "yes",
-        "Packaged": "2023-01-09 14:36:20 UTC; hadleywickham",
-        "Author": "Hadley Wickham [aut, cre] (<https://orcid.org/0000-0003-4757-117X>),\n  Lionel Henry [aut],\n  RStudio [cph, fnd]",
-        "Maintainer": "Hadley Wickham <hadley@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2023-01-10 14:40:02 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-01-31 17:14:28 UTC; unix"
       }
     },
     "rappdirs": {
@@ -1264,177 +836,6 @@
         "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-02-02 16:52:07 UTC; unix"
       }
     },
-    "sys": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "sys",
-        "Type": "Package",
-        "Title": "Powerful and Reliable Tools for Running System Commands in R",
-        "Version": "3.4.1",
-        "Authors@R": "c(person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), \n      email = \"jeroen@berkeley.edu\", comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = \"ctb\"))",
-        "Description": "Drop-in replacements for the base system2() function with fine control\n    and consistent behavior across platforms. Supports clean interruption, timeout, \n    background tasks, and streaming STDIN / STDOUT / STDERR over binary or text \n    connections. Arguments on Windows automatically get encoded and quoted to work \n    on different locales.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://github.com/jeroen/sys",
-        "BugReports": "https://github.com/jeroen/sys/issues",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.1.1",
-        "Suggests": "unix (>= 1.4), spelling, testthat",
-        "Language": "en-US",
-        "NeedsCompilation": "yes",
-        "Packaged": "2022-10-18 09:37:11 UTC; jeroen",
-        "Author": "Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),\n  Gábor Csárdi [ctb]",
-        "Maintainer": "Jeroen Ooms <jeroen@berkeley.edu>",
-        "Repository": "CRAN",
-        "Date/Publication": "2022-10-18 12:40:02 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-01-31 16:28:50 UTC; unix"
-      }
-    },
-    "tibble": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "tibble",
-        "Title": "Simple Data Frames",
-        "Version": "3.2.1",
-        "Authors@R": "\n    c(person(given = \"Kirill\",\n             family = \"M\\u00fcller\",\n             role = c(\"aut\", \"cre\"),\n             email = \"kirill@cynkra.com\",\n             comment = c(ORCID = \"0000-0002-1416-3412\")),\n      person(given = \"Hadley\",\n             family = \"Wickham\",\n             role = \"aut\",\n             email = \"hadley@rstudio.com\"),\n      person(given = \"Romain\",\n             family = \"Francois\",\n             role = \"ctb\",\n             email = \"romain@r-enthusiasts.com\"),\n      person(given = \"Jennifer\",\n             family = \"Bryan\",\n             role = \"ctb\",\n             email = \"jenny@rstudio.com\"),\n      person(given = \"RStudio\",\n             role = c(\"cph\", \"fnd\")))",
-        "Description": "Provides a 'tbl_df' class (the 'tibble') with stricter checking and better formatting than the traditional\n    data frame.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://tibble.tidyverse.org/, https://github.com/tidyverse/tibble",
-        "BugReports": "https://github.com/tidyverse/tibble/issues",
-        "Depends": "R (>= 3.4.0)",
-        "Imports": "fansi (>= 0.4.0), lifecycle (>= 1.0.0), magrittr, methods,\npillar (>= 1.8.1), pkgconfig, rlang (>= 1.0.2), utils, vctrs\n(>= 0.4.2)",
-        "Suggests": "bench, bit64, blob, brio, callr, cli, covr, crayon (>=\n1.3.4), DiagrammeR, dplyr, evaluate, formattable, ggplot2,\nhere, hms, htmltools, knitr, lubridate, mockr, nycflights13,\npkgbuild, pkgload, purrr, rmarkdown, stringi, testthat (>=\n3.0.2), tidyr, withr",
-        "VignetteBuilder": "knitr",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.3",
-        "Config/testthat/edition": "3",
-        "Config/testthat/parallel": "true",
-        "Config/testthat/start-first": "vignette-formats, as_tibble, add,\ninvariants",
-        "Config/autostyle/scope": "line_breaks",
-        "Config/autostyle/strict": "true",
-        "Config/autostyle/rmd": "false",
-        "Config/Needs/website": "tidyverse/tidytemplate",
-        "NeedsCompilation": "yes",
-        "Packaged": "2023-03-19 09:23:10 UTC; kirill",
-        "Author": "Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>),\n  Hadley Wickham [aut],\n  Romain Francois [ctb],\n  Jennifer Bryan [ctb],\n  RStudio [cph, fnd]",
-        "Maintainer": "Kirill Müller <kirill@cynkra.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2023-03-20 06:30:02 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-10-23 15:40:54 UTC; unix"
-      }
-    },
-    "tidyselect": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "tidyselect",
-        "Title": "Select from a Set of Strings",
-        "Version": "1.2.0",
-        "Authors@R": "c(\n    person(\"Lionel\", \"Henry\", , \"lionel@rstudio.com\", role = c(\"aut\", \"cre\")),\n    person(\"Hadley\", \"Wickham\", , \"hadley@rstudio.com\", role = \"aut\"),\n    person(\"RStudio\", role = c(\"cph\", \"fnd\"))\n  )",
-        "Description": "A backend for the selecting functions of the 'tidyverse'.  It\n    makes it easy to implement select-like functions in your own packages\n    in a way that is consistent with other 'tidyverse' interfaces for\n    selection.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://tidyselect.r-lib.org, https://github.com/r-lib/tidyselect",
-        "BugReports": "https://github.com/r-lib/tidyselect/issues",
-        "Depends": "R (>= 3.4)",
-        "Imports": "cli (>= 3.3.0), glue (>= 1.3.0), lifecycle (>= 1.0.3), rlang\n(>= 1.0.4), vctrs (>= 0.4.1), withr",
-        "Suggests": "covr, crayon, dplyr, knitr, magrittr, rmarkdown, stringr,\ntestthat (>= 3.1.1), tibble (>= 2.1.3)",
-        "VignetteBuilder": "knitr",
-        "ByteCompile": "true",
-        "Config/testthat/edition": "3",
-        "Config/Needs/website": "tidyverse/tidytemplate",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.1",
-        "NeedsCompilation": "no",
-        "Packaged": "2022-10-10 14:09:03 UTC; hadleywickham",
-        "Author": "Lionel Henry [aut, cre],\n  Hadley Wickham [aut],\n  RStudio [cph, fnd]",
-        "Maintainer": "Lionel Henry <lionel@rstudio.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2022-10-10 19:00:02 UTC",
-        "Built": "R 4.2.0; ; 2023-01-31 17:08:12 UTC; unix"
-      }
-    },
-    "utf8": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "utf8",
-        "Title": "Unicode Text Processing",
-        "Version": "1.2.4",
-        "Authors@R": "\n    c(person(given = c(\"Patrick\", \"O.\"),\n             family = \"Perry\",\n             role = c(\"aut\", \"cph\")),\n      person(given = \"Kirill\",\n             family = \"M\\u00fcller\",\n             role = \"cre\",\n             email = \"kirill@cynkra.com\"),\n      person(given = \"Unicode, Inc.\",\n             role = c(\"cph\", \"dtc\"),\n             comment = \"Unicode Character Database\"))",
-        "Description": "Process and print 'UTF-8' encoded international\n    text (Unicode). Input, validate, normalize, encode, format, and\n    display.",
-        "License": "Apache License (== 2.0) | file LICENSE",
-        "URL": "https://ptrckprry.com/r-utf8/, https://github.com/patperry/r-utf8",
-        "BugReports": "https://github.com/patperry/r-utf8/issues",
-        "Depends": "R (>= 2.10)",
-        "Suggests": "cli, covr, knitr, rlang, rmarkdown, testthat (>= 3.0.0),\nwithr",
-        "VignetteBuilder": "knitr, rmarkdown",
-        "Config/testthat/edition": "3",
-        "Encoding": "UTF-8",
-        "RoxygenNote": "7.2.3",
-        "NeedsCompilation": "yes",
-        "Packaged": "2023-10-22 13:43:19 UTC; kirill",
-        "Author": "Patrick O. Perry [aut, cph],\n  Kirill Müller [cre],\n  Unicode, Inc. [cph, dtc] (Unicode Character Database)",
-        "Maintainer": "Kirill Müller <kirill@cynkra.com>",
-        "Repository": "CRAN",
-        "Date/Publication": "2023-10-22 21:50:02 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-10-23 15:20:40 UTC; unix"
-      }
-    },
-    "vctrs": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "vctrs",
-        "Title": "Vector Helpers",
-        "Version": "0.6.5",
-        "Authors@R": "c(\n    person(\"Hadley\", \"Wickham\", , \"hadley@posit.co\", role = \"aut\"),\n    person(\"Lionel\", \"Henry\", , \"lionel@posit.co\", role = \"aut\"),\n    person(\"Davis\", \"Vaughan\", , \"davis@posit.co\", role = c(\"aut\", \"cre\")),\n    person(\"data.table team\", role = \"cph\",\n           comment = \"Radix sort based on data.table's forder() and their contribution to R's order()\"),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\"))\n  )",
-        "Description": "Defines new notions of prototype and size that are used to\n    provide tools for consistent and well-founded type-coercion and\n    size-recycling, and are in turn connected to ideas of type- and\n    size-stability useful for analysing function interfaces.",
-        "License": "MIT + file LICENSE",
-        "URL": "https://vctrs.r-lib.org/, https://github.com/r-lib/vctrs",
-        "BugReports": "https://github.com/r-lib/vctrs/issues",
-        "Depends": "R (>= 3.5.0)",
-        "Imports": "cli (>= 3.4.0), glue, lifecycle (>= 1.0.3), rlang (>= 1.1.0)",
-        "Suggests": "bit64, covr, crayon, dplyr (>= 0.8.5), generics, knitr,\npillar (>= 1.4.4), pkgdown (>= 2.0.1), rmarkdown, testthat (>=\n3.0.0), tibble (>= 3.1.3), waldo (>= 0.2.0), withr, xml2,\nzeallot",
-        "VignetteBuilder": "knitr",
-        "Config/Needs/website": "tidyverse/tidytemplate",
-        "Config/testthat/edition": "3",
-        "Encoding": "UTF-8",
-        "Language": "en-GB",
-        "RoxygenNote": "7.2.3",
-        "NeedsCompilation": "yes",
-        "Packaged": "2023-12-01 16:27:12 UTC; davis",
-        "Author": "Hadley Wickham [aut],\n  Lionel Henry [aut],\n  Davis Vaughan [aut, cre],\n  data.table team [cph] (Radix sort based on data.table's forder() and\n    their contribution to R's order()),\n  Posit Software, PBC [cph, fnd]",
-        "Maintainer": "Davis Vaughan <davis@posit.co>",
-        "Repository": "RSPM",
-        "Date/Publication": "2023-12-01 23:50:02 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-12-11 18:55:33 UTC; unix"
-      }
-    },
-    "whisker": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "whisker",
-        "Maintainer": "Edwin de Jonge <edwindjonge@gmail.com>",
-        "License": "GPL-3",
-        "Title": "{{mustache}} for R, Logicless Templating",
-        "Type": "Package",
-        "LazyLoad": "yes",
-        "Author": "Edwin de Jonge",
-        "Description": "Implements 'Mustache' logicless templating.",
-        "Version": "0.4.1",
-        "URL": "https://github.com/edwindj/whisker",
-        "Suggests": "markdown",
-        "RoxygenNote": "6.1.1",
-        "NeedsCompilation": "no",
-        "Packaged": "2022-12-05 15:15:55 UTC; hornik",
-        "Repository": "RSPM",
-        "Date/Publication": "2022-12-05 15:33:50 UTC",
-        "Encoding": "UTF-8",
-        "Built": "R 4.2.0; ; 2023-12-11 18:15:38 UTC; unix"
-      }
-    },
     "withr": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -1489,40 +890,17 @@
         "Date/Publication": "2019-04-21 12:20:03 UTC",
         "Built": "R 4.2.0; ; 2022-05-25 22:54:12 UTC; unix"
       }
-    },
-    "yaml": {
-      "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
-      "description": {
-        "Package": "yaml",
-        "Type": "Package",
-        "Title": "Methods to Convert R Data to YAML and Back",
-        "Date": "2023-01-18",
-        "Version": "2.3.7",
-        "Suggests": "RUnit",
-        "Author": "Shawn P Garbett [aut], Jeremy Stephens [aut, cre], Kirill Simonov [aut], Yihui Xie [ctb],\n  Zhuoer Dong [ctb], Hadley Wickham [ctb], Jeffrey Horner [ctb], reikoch [ctb],\n  Will Beasley [ctb], Brendan O'Connor [ctb], Gregory R. Warnes [ctb],\n  Michael Quinn [ctb], Zhian N. Kamvar [ctb]",
-        "Maintainer": "Shawn Garbett <shawn.garbett@vumc.org>",
-        "License": "BSD_3_clause + file LICENSE",
-        "Description": "Implements the 'libyaml' 'YAML' 1.1 parser and emitter\n  (<https://pyyaml.org/wiki/LibYAML>) for R.",
-        "URL": "https://github.com/vubiostat/r-yaml/",
-        "BugReports": "https://github.com/vubiostat/r-yaml/issues",
-        "NeedsCompilation": "yes",
-        "Packaged": "2023-01-18 17:20:16 UTC; garbetsp",
-        "Repository": "CRAN",
-        "Date/Publication": "2023-01-23 18:40:02 UTC",
-        "Built": "R 4.2.0; x86_64-pc-linux-gnu; 2023-01-31 16:38:32 UTC; unix"
-      }
     }
   },
   "files": {
+    ".Renviron": {
+      "checksum": "e02290c392105d362633f0073fe5df2d"
+    },
     ".Rprofile": {
-      "checksum": "ead3503521a4bc24e0f9b3060490fa29"
+      "checksum": "a8182877aa925bf75ed53aca24b98c64"
     },
     "app.R": {
-      "checksum": "db0325a963616e6c248da721735eaef9"
-    },
-    "global.R": {
-      "checksum": "21e4c5b9e27475b75261af56f1ec641d"
+      "checksum": "be1f3fbb1917d262280e536d5458b1d2"
     },
     "LICENSE": {
       "checksum": "a87a7059d580c45495c1218f53e3610d"
@@ -1531,7 +909,7 @@
       "checksum": "b7eb1e70cfedcbacfda92a8e67b7a29f"
     },
     "renv.lock": {
-      "checksum": "44e0794b7aa0cc25dce021ab81e399fb"
+      "checksum": "d0bf7dc11614142a4661a4299f285583"
     }
   },
   "users": null

@@ -1,6 +1,4 @@
 library(shiny)
-library(arrow)
-source('global.R')
 
 ui <- fluidPage(
   h3('Test header pt. 2'),
@@ -24,10 +22,6 @@ server <- function(input, output, session) {
     paste0('this dropdown is working! you chose ', input$test_sel)
   })
   
-  output$pins_table <- renderTable({
-    dataload_from_pins(varnames = 'frs_by_naics')
-    head(frs_by_naics)
-  })
 }
 
 shinyApp(ui, server)
