@@ -1,10 +1,12 @@
 library(shiny)
+library(EJAMbatch.summarizer)
+library(EJAMejscreenapi)
 
 ui <- fluidPage(
   h3('Test header pt. 2'),
   h5('test subheader'),
   
-  h5('New code showing up!'),
+  h5('New code showing up! Happy 2024'),
   
   selectInput('test_sel', label = 'Choose an option', choices = c('A','B','C')),
   verbatimTextOutput('test_sel_text'),
